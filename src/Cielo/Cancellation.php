@@ -51,6 +51,11 @@ class Cancellation
     private $cancellationInformation;
 
     /**
+     * @var Amount
+     */
+    private $amount;
+
+    /**
      * @param Merchant      $merchant
      * @param string        $tid
      */
@@ -169,6 +174,14 @@ class Cancellation
     }
 
     /**
+     * @param Amount $amount
+     */
+    public function setAmount(Amount $amount)
+    {
+        $this->amount = $amount;
+    }
+
+    /**
      * @return Consultation Id
      */
     public function getCancellationId()
@@ -206,6 +219,14 @@ class Cancellation
     public function getTid()
     {
         return $this->tid;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAmount()
+    {
+        return $this->amount;
     }
 
     /**
