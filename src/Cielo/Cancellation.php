@@ -86,8 +86,6 @@ class Cancellation
         }
 
         $this->tid = $tid;
-            
-        
     }
 
     /**
