@@ -22,7 +22,7 @@ class CancellationInformation
     /**
      * @var string
      */
-    private $value;
+    private $amount;
 
 
     /**
@@ -52,9 +52,9 @@ class CancellationInformation
     /**
      * @return string
      */
-    public function getValue()
+    public function getAmount()
     {
-        return $this->value;
+        return $this->amount;
     }
 
     /**
@@ -82,10 +82,10 @@ class CancellationInformation
     }
 
     /**
-     * @param string $value
+     * @param string $amount
      */
-    public function setValue($value)
+    public function setAmount($amount)
     {
-        $this->value = $value;
+        $this->amount = $amount;
     }
 }
